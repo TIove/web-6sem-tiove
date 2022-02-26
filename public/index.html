@@ -1,0 +1,151 @@
+<!DOCTYPE HTML>
+<html lang="ru">
+<head>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Лихачев Игорь - М33051</title>
+  <meta charset="utf-8">
+  <meta name="keywords" content="Игорь, Лихачев, портфолио, краткая, информация">
+  <meta name="description" content="Сайт создан для демонстрации web">
+  <style>
+      body {
+          background-color: #8c8c79;
+      }
+  </style>
+</head>
+<body>
+<header>
+  <h2 class="mainPhrase">Привет, меня зовут Лихачев Игорь Олегович и я учусь в группе М33051</h2>
+  <nav class="headerContacts">
+    Контакты:
+    <ul>
+      <li><a href="https://github.com/TIove" target="_blank">GitHub</a></li>
+      <li><a href="https://vk.com/tiove" target="_blank">VK</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+  <section class="aboutMe">
+    <img width="200" height="270" src="resources/mainPhoto.png" class="mainPhoto" />
+    <article class="favoriteQuote">
+      <h3>Любимая цитата:</h3>
+      <h4>
+        <p>
+          Не существует пути к счастью. Счастье – это и есть путь.
+        </p>
+      </h4>
+    </article>
+    <article class="advantages">
+      <h3>Успехи:</h3>
+      <h4>
+        <ul>
+          <li><span>Учился почти на 4</span></li>
+          <li><span>Не отчислился</span></li>
+        </ul>
+      </h4>
+    </article>
+    <article class="disadvantages">
+      <h3>Анти-успехи:</h3>
+      <h4>
+        <ol>
+          <li><span>Не работаю в Яндексе</span></li>
+          <li><span>Не открыл стартап</span></li>
+          <li><span>Мало путешествовую</span></li>
+        </ol>
+      </h4>
+    </article>
+  </section>
+  <section class="hardSkills">
+    <article class="techStack">
+      <h3>Мой стек:</h3>
+      <dl>
+        <dt>Навыки:</dt>
+        <dd>
+          <li><span>EntityFrameworkCore</span></li>
+          <li><span>Unit Testing</span></li>
+          <li><span>SQL</span></li>
+          <li><span>ООП</span></li>
+        </dd>
+        <dt>Языки:</dt>
+        <dd>
+          <li><span>C#</span></li>
+          <li><span>Go</span></li>
+          <li><span>T-SQL</span></li>
+        </dd>
+      </dl>
+    </article>
+  </section>
+  <section class="codeSamples">
+    <h3>Пример кода (Не вызывает гордости, просто пусть лежит здесь)</h3>
+    <pre>
+         <code class="javaCode">
+        public void actionPerformed(AnActionEvent event) {
+          final Editor editor = event.getRequiredData(CommonDataKeys.EDITOR);
+          final Project project = event.getRequiredData(CommonDataKeys.PROJECT);
+          final Document document = editor.getDocument();
+
+          Caret primaryCaret = editor.getCaretModel().getPrimaryCaret();
+          int start = primaryCaret.getSelectionStart();
+          int end = primaryCaret.getSelectionEnd();
+
+          String selectedText = editor.getSelectionModel().getSelectedText();
+
+          if (selectedText == null) {
+              Messages.showMessageDialog(
+                      "Selection is empty, could you please select something?",
+                      "SQL Action",
+                      Messages.getInformationIcon());
+              return;
+          }
+
+          try {
+              String newString = formatSQLRemote(selectedText);
+              WriteCommandAction.runWriteCommandAction(project, () -> document.replaceString(start, end, newString));
+          } catch (Exception e) {
+              return;
+          }
+
+          primaryCaret.removeSelection();
+        }
+        </code>
+      </pre>
+  </section>
+  <aside>
+    <h3>Красивая картинка, оставлю ее здесь
+      <h3>
+       <pre id="plane">
+         ░░░░░░░░▄███▄▄░░░░░░░░░░░░░░░░░░░░░░░░░░
+         ░░░░░░░░█░░░▀▀█▄░░░░░░░░░░░░░░░░░░░░░░░░
+         ░░░░░░░░█▄░░░░░▀█▄░░░░░░░░░░░░░░░░░░░░░░
+         ░░░░░░░░▀█░░░░░░░██▄░░░░░░░█▄░░░░░░░░░░░
+         ░░░░░░░░░▀█░░░░░░░▀██▄░░░░░░▀███░░░░░░░░
+         ░░░░░░░░░░▀█░░░░░░░░▀█▄▄██▀▀██▀█▄░░░░░░░
+         ░░░░░░░░░░░▀█▄░░░░░░░░▀▀░░░░░█░░▀▀░░░░░░
+         ░░░░░░░░░░░░▀█▄░░░░░░░░░░░░░██░░░░░░░░░░
+         ░░░░░░░░░░░░░░▀█▄░░░░░░░░░░██░░░░░░░░░░░
+         ░░░░░░░░░░░░░▄█▀░░░░░░░░░░░░▀█▄▄░░░░░░░░
+         ░░░░░░░░░░░▄██▀░░░░░░░░░░░░░░░▀██▄░░░░░░
+         ░░░░░░░░░░▄█▀░░░░░░░░░▄░░░░░░░░░▀▀█▄░░░░
+         ▄▄▄▄░░░░▄█▀░░░░░░░░▄▄█▀█▄░░░░░░░░░░▀█▄░░
+         ██▀▀█▄▄██▀░░░░░░░▄██▀░░░▀██▄░░░░░░░░░██░
+         ░▀█▄░▀▀▀░░░░░░░▄█▀▀░░░░░░░░▀▀█▄▄░░░░░░██
+         ░░▀█▄░░░░░░░▄██▀░░░░░░░░░░░░░░░▀▀██▄▄▄█▀
+         ░░░░█▀░░░░░██▀░░░░░░░░░░░░░░░░░░░░░░░░░░
+         ░░░██▄▄█▄░░▀█▄░░░░░░░░░░░░░░░░░░░░░░░░░░
+         ░░░░▀▀░░▀██▄░██░░░░░░░░░░░░░░░░░░░░░░░░░
+         ░░░░░░░░░░░▀▀▀▀░░░░░░░░░░░░░░░░░░░░░░░░░
+       </pre>
+  </aside>
+</main>
+<footer>
+  <article class="formula">
+    <h3>Формула успеха:</h3>
+    <p>Успех = Упорство<sup>2</sup> + H<sub>2</sub>O</p>
+  </article>
+  <p>По словам <cite>Чарльза Буковски</cite> —
+    <q>
+      Интеллектуал о простой вещи говорит сложно — художник сложную вещь описывает простыми словами.
+    </q>
+  </p>
+</footer>
+</body>
+</html>

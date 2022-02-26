@@ -1,0 +1,79 @@
+:root {
+  --color-primary: #00008b;
+  --color-second: #004d00;
+  --color-additionary: #80461B;
+}
+
+.mainPhoto {
+  opacity:0.5;
+  box-shadow: 5px 5px #505050;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: 0 5% 0 0;
+  float:left;
+}
+
+.mainPhoto:hover {
+  opacity:1;
+  box-shadow: 5px 5px #505050;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin: 0 3% 0 0;
+  float:left;
+}
+
+.mainPhrase {
+  text-align: center;
+  z-index: 5;
+  position: fixed;
+  top: 0px;
+  width: 50%;
+  margin-left: 50%;
+  padding: 20px 0px;
+  border: 2px solid black;
+  color: var(--color-primary);
+}
+
+.headerContacts {
+  
+  color: var(--color-primary);
+  border: 0px solid black;
+  float: left;
+  margin-right: 100%;
+  text-align: center;
+}
+
+.favoriteQuote {
+  margin-left: 0%;
+  color: var(--color-second)
+}
+
+h3 {
+  color: var(--color-additionary)
+}
+
+#plane {
+  color: black
+}
+
+ul, ol, dd {
+  color: var(--color-second)
+}
+
+li span {
+  color: var(--color-primary)
+}
+
+.formula {
+  color: var(--color-primary)
+}
+
+.codeSamples {
+  border: 2px solid black;
+}
+
+.javaCode {
+  color: black
+}
